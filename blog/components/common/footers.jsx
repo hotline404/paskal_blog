@@ -1,5 +1,6 @@
 import React from "react";
 
+//footer 프레젠트 컴포넌트
 function footers() {
   return (
     <div>
