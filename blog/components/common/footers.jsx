@@ -1,7 +1,7 @@
 import React from "react";
 
 //footer 프레젠트 컴포넌트
-function footers() {
+function Footers() {
   return (
     <div>
       <p>email: cosmoyj7733@gmail.com</p>
@@ -10,4 +10,4 @@ function footers() {
   );
 }
 
-export default footers;
+export default Footers;

@@ -1,11 +1,11 @@
 import React from "react";
 
 //로고 프레젠트 컴포넌트
-function CustomLogo() {
+function CustomLogo(props) {
   //이후 글리치 효과 적용 예정
   return (
     <div>
-      <h1>paskal's blog</h1>
+      <h1>{props.children}</h1>
     </div>
   );
 }
