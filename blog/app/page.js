@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+//페이지(Post List, article가 올 수 있는 컴포넌트 -> routing prams, searchParam이 들어갈 수 있고 api 비동기 수행 가능)
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

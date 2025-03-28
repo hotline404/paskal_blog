@@ -5,7 +5,7 @@ function CustomLogo(props) {
   //이후 글리치 효과 적용 예정
   return (
     <div>
-      <h1>{props.children}</h1>
+      <h1 className="bg-white">{props.children}</h1>
     </div>
   );
 }

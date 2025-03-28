@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+//헤더가 올 루트 컴포넌트
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

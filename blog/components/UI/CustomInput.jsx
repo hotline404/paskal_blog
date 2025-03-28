@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef } from "react";
 
 //input 프레젠트 컴포넌트
