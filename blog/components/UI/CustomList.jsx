@@ -4,7 +4,7 @@ import React from "react";
 function CustomList(props, { items }) {
   
   //이후에 map으로 만들어야 합니다.
-  return (
+  return items ? (
     <div>
       <ol>
         {items.map((item) => {
@@ -16,7 +16,7 @@ function CustomList(props, { items }) {
         })}
       </ol>
     </div>
-  );
+  ) : <></>;
 }
 
 export default CustomList;
