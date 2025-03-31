@@ -3,7 +3,7 @@ import genRandomNum from '@/util/genRandomNum'
 
 //태그 리스트 프레젠트 컴포넌트
 function CustomTag({ items }) {
-  return (
+  return items ? (
     <div>
       {items.map((item) => {
         return (
@@ -11,7 +11,7 @@ function CustomTag({ items }) {
         )
       })}
     </div>
-  )
+  ) : <></>
 }
 
 export default CustomTag
