@@ -5,7 +5,7 @@ import React from 'react'
 function ListCard({ item }) {
 
   return item ? (
-    <div>
+    <div className='rounded-2xl border-white border-1 m-6 w-[70%] h-[50%]'>
       <p>{item.date}</p>
       <h3>{item.title}</h3>
       <h4>{item.tags}</h4>

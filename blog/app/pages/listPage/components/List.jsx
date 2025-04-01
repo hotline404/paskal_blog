@@ -30,7 +30,13 @@ const dummy_data = [
     tag: ["asdf", "aasdf", "asdf", "asdf"],
     id: "asdfasa13332128931444"
   },
-
+  
+  {
+    date: "2320.12.12",
+    title: "이건 제목4",
+    tag: ["asdf", "aasdf", "asdf", "asdf"],
+    id: "asdfasa13332128931444"
+  },
 ]
 
 function List() {
@@ -38,10 +44,10 @@ function List() {
   const data = dummy_data;
 
   return data ? (
-    <ol>
+    <ol className='h-[100%] w-[100%] flex'>
       {data.map(item => {
         return (
-          <li key={item.id}>
+          <li key={item.id} className='h-[20%] w-[100%]'>
             <ListCard item={item} />
           </li>
         )
