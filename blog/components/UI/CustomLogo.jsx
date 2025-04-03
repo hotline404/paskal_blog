@@ -4,7 +4,7 @@ import React from "react";
 function CustomLogo(props) {
   //이후 글리치 효과 적용 예정
   return (
-    <div className="relative h-screen content-center"> 
+    <div className="relative content-center"> 
       <h1 className="text-white text-[30px] top-[0rem] left-[5px] absolute font-bold z-50">
         {props.children}
       </h1>
