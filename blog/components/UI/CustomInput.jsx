@@ -1,19 +1,14 @@
-"use client";
-
-import React, { useRef } from "react";
+import React from "react";
 
 //input 프레젠트 컴포넌트
-export default function CustomInput(props, ref) {
-  const inputRef = useRef();
-
+export default function CustomInput({input, onChange}, ref) {
   return (
-    <div>
+    <div className="border-red-400 border p-1 rounded-2xl">
       <input
+        className="focus:outline-none"
         ref={ref}
-        type={props.type}
-        id={props.id}
-        value={props.value}
-        onChange={props.onChange}
+        onChange={onChange}
+        {...input}
       />
     </div>
   );

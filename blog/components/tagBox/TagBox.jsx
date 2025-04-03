@@ -30,8 +30,13 @@ const dummy_data = [
 function TagBox() {
   
   return (
-    <div>
-      <CustomInput /> 
+    <div className='mt-18'>
+      <CustomInput input={{
+        name: "search",
+        type: "search",
+        id: "searchTag",
+        placeholder: "태그 검색!!"
+      }}/> 
       <CustomButton />
       <CustomTag items={dummy_data}/>
     </div>

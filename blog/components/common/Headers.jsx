@@ -7,14 +7,13 @@ import TagBox from "../tagBox/TagBox";
 
 function Headers() {
   return (
-    <div className="h-screen justify-between  ">
-      <div className="">
-        <CustomLogo>paskal's blog</CustomLogo>
-      </div>
-      <TagBox />
+    <div className="h-screen relative">
+      <CustomLogo className="">paskal's blog</CustomLogo>
+      <TagBox className=""/>
       <Footers className="fixed top-0" />
     </div>
   );
 }
 
 export default Headers;
+// 야발...
