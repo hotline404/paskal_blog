@@ -37,12 +37,12 @@ function List() {
   // li 태그 성분  w 고정 값으로 바꿔서 flex 테스트 하기
 
   return data ? (
-    <ol className="w-full flex flex-wrap gap-4 space-y">
+    <ol className="w-full flex flex-wrap gap-4 space-y ">
       {data.map((item) => {
         return (
           <li
             key={item.id}
-            className="h-[20%] w-[calc(30%-10px)] min-w-[150px]"
+            className="h-[20%] w-[calc(25%-20px)] min-w-[150px]"
           >
             <ListCard item={item} />
           </li>

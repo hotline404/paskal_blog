@@ -10,7 +10,7 @@ function CustomTag({ items }) {
     <ol>
       {items.map((item) => {
         return (
-          <li onClick={item.onClick} key={item.id}>{item.tag}</li>
+          <li className="w-full content-center justify-center text-center border-1 mt-2 border-red-400 rounded-3xl text-white" onClick={item.onClick} key={item.id}>{item.tag}</li>
         )
       })}
     </ol>
