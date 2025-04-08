@@ -1,5 +1,6 @@
 import React from "react";
 import ListCard from "./ListCard";
+import { style } from "@/components/literar/style/style";
 
 //리스트 컴포넌트 ( 비즈니스 컴포넌트, 클라이언트 )
 
@@ -34,15 +35,16 @@ const dummy_data = [
 
 function List() {
   const data = dummy_data;
+  const listStyle = style.pages.listPage.list
   // li 태그 성분  w 고정 값으로 바꿔서 flex 테스트 하기
 
   return data ? (
-    <ol className="w-full flex flex-wrap gap-4 space-y ">
+    <ol className={listStyle.ol}>
       {data.map((item) => {
         return (
           <li
             key={item.id}
-            className="h-[20%] w-[calc(25%-20px)] min-w-[150px]"
+            className={listStyle.li}
           >
             <ListCard item={item} />
           </li>

@@ -3,6 +3,7 @@ import React from "react";
 import CustomTag from "../UI/CustomTag";
 import CustomInput from "../UI/CustomInput";
 import CustomButton from "../UI/CustomButton";
+import { style } from "../literar/style/style";
 
 const dummy_data = [
   {
@@ -28,8 +29,9 @@ const dummy_data = [
 ];
 
 function TagBox() {
+  const tagBoxStyle = style.components.tagBox
   return (
-    <div className="mt-18">
+    <div className={tagBoxStyle.div}>
       <CustomInput
         input={{
           name: "search",

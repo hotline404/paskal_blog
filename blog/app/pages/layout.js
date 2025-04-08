@@ -1,9 +1,12 @@
 import Headers from "@/components/common/Headers";
+import { style } from "@/components/literar/style/style";
+
 export default function layout({ children }) {
+  const layoutStyle = style.LayOut
   return (
-    <div className="h-[100%] shadow-red-400 shadow-2xl">
+    <div className={layoutStyle.div}>
       {children}
-      <aside className="fixed top-0 right-0 z-40 min-w-[13%] h-screen transition-transform -translate-x-full sm:translate-x-0 bg-[#252525] text-red-400 shadow-red-800 shadow-2xl p-4 ">
+      <aside className={layoutStyle.aside}>
         <Headers />
       </aside>
     </div>

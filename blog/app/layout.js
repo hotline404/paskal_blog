@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { style } from "@/components/literar/style/style";
+
 //헤더가 올 루트 컴포넌트
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +19,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const rootLayoutStyle = style.LayOut
+
+
   return (
-    <html lang="en" className="w-[100%] h-screen bg-[#252525] ">
+    <html lang="en" className={rootLayoutStyle.html}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-[100%] h-screen bg-[#252525]`}
       >
