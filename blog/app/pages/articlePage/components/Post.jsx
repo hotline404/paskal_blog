@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Post() {
+function Post({ post }) {
   return (
     <div>
-      포스트
+      {post}
     </div>
   )
 }

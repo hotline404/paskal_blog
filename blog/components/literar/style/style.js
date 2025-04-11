@@ -4,7 +4,8 @@ export const style = {
   LayOut: {
     html: "w-[100%] h-screen bg-[#252525]",
     div: "h-[100%] shadow-red-400 shadow-2xl",
-    aside: "fixed top-0 right-0 z-40 min-w-[13%] h-screen transition-transform -translate-x-full sm:translate-x-0 bg-[#252525] text-red-400 shadow-red-800 shadow-2xl p-4 "
+    aside:
+      "fixed top-0 right-0 z-40 min-w-[13%] h-screen transition-transform -translate-x-full sm:translate-x-0 bg-[#252525] text-red-400 shadow-red-800 shadow-2xl p-4 ",
   },
   pages: {
     listPage: {
@@ -22,13 +23,14 @@ export const style = {
     },
     articlePage: {
       Post: {
-        div: "",
+        div: ""
       },
       PostHeader: {
         div: "",
       },
       page: {
-        div: "",
+        div1: "flex justify-center w-[87%] h-screen",
+        div2: "bg-[#252525] h-[90%] w-[70%] rounded-3xl mt-[50px] shadow-red-800 shadow-lg"
       },
     },
   },
@@ -44,7 +46,7 @@ export const style = {
       },
     },
     tagBox: {
-      div: "mt-18"
+      div: "mt-18",
     },
   },
 };
